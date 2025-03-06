@@ -46,17 +46,17 @@ header a {
 }
 
 @keyframes rainbow {
-  0% { color: red; }
-  10% { color: orange; }
-  20% { color: yellow; }
-  30% { color: yellowgreen; }
-  40% { color: green; }
-  50% { color: aquamarine; }
-  60% { color: aqua; }
-  70% { color: blue; }
-  80% { color: purple; }
-  90% { color: pink; }
-  100% { color: red; } 
+  0% {color: red;}
+  10% {color: orange;}
+  20% {color: yellow;}
+  30% {color: yellowgreen;}
+  40% {color: green;}
+  50% {color: aquamarine;}
+  60% {color: aqua;}
+  70% {color: blue;}
+  80% {color: purple;}
+  90% {color: pink;}
+  100% {color: red;} 
 }
 
 /* end header link animations */
@@ -64,13 +64,20 @@ header a {
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
 
-
+main a:hover {
+  transition: color;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  color:green;
 
 }
 /* end article link transitions */
 
-main > article, nav{
+main > article, nav {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
